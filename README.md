@@ -1,0 +1,2 @@
+# SmokingDetectionApplication
+Multimedia technologies
