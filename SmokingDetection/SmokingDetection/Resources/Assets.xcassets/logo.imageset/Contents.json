@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "gas-kvas-com-p-gerb-mgtu-na-prozrachnom-fone-2.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
