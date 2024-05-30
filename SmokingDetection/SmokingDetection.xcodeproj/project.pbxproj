@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E59E78F92C038B5E0023275F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E78F82C038B5E0023275F /* AppDelegate.swift */; };
+		E59E78FB2C038B5E0023275F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E78FA2C038B5E0023275F /* SceneDelegate.swift */; };
+		E59E78FD2C038B5E0023275F /* AbstractCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E78FC2C038B5E0023275F /* AbstractCameraViewController.swift */; };
+		E59E79022C038B5F0023275F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59E79012C038B5F0023275F /* Assets.xcassets */; };
+		E59E79052C038B5F0023275F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E59E79042C038B5F0023275F /* Base */; };
+		E59E79152C03AAD60023275F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E79142C03AAD60023275F /* Logger.swift */; };
+		E59E79172C03ADAD0023275F /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E79162C03ADAD0023275F /* VisionObjectRecognitionViewController.swift */; };
+		E59E79192C03AF2C0023275F /* SmokePeopleModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E59E79182C03AF2C0023275F /* SmokePeopleModel.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E59E78F52C038B5E0023275F /* SmokingDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmokingDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59E78F82C038B5E0023275F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E59E78FA2C038B5E0023275F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E59E78FC2C038B5E0023275F /* AbstractCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCameraViewController.swift; sourceTree = "<group>"; };
+		E59E79012C038B5F0023275F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E59E79042C038B5F0023275F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E59E79062C038B5F0023275F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59E79142C03AAD60023275F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E59E79162C03ADAD0023275F /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+		E59E79182C03AF2C0023275F /* SmokePeopleModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SmokePeopleModel.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E59E78F22C038B5E0023275F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E59E78EC2C038B5E0023275F = {
+			isa = PBXGroup;
+			children = (
+				E59E78F72C038B5E0023275F /* SmokingDetection */,
+				E59E78F62C038B5E0023275F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E59E78F62C038B5E0023275F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E59E78F52C038B5E0023275F /* SmokingDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E59E78F72C038B5E0023275F /* SmokingDetection */ = {
+			isa = PBXGroup;
+			children = (
+				E59E79132C03AAD10023275F /* Helpers */,
+				E59E790D2C038B870023275F /* Application */,
+				E59E790C2C038B850023275F /* Resources */,
+				E59E790E2C038B980023275F /* ViewControllers */,
+			);
+			path = SmokingDetection;
+			sourceTree = "<group>";
+		};
+		E59E790C2C038B850023275F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E59E79182C03AF2C0023275F /* SmokePeopleModel.mlmodel */,
+				E59E79012C038B5F0023275F /* Assets.xcassets */,
+				E59E79032C038B5F0023275F /* LaunchScreen.storyboard */,
+				E59E79062C038B5F0023275F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E59E790D2C038B870023275F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E59E78F82C038B5E0023275F /* AppDelegate.swift */,
+				E59E78FA2C038B5E0023275F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E59E790E2C038B980023275F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E59E79162C03ADAD0023275F /* VisionObjectRecognitionViewController.swift */,
+				E59E78FC2C038B5E0023275F /* AbstractCameraViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E59E79132C03AAD10023275F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E59E79142C03AAD60023275F /* Logger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E59E78F42C038B5E0023275F /* SmokingDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59E79092C038B5F0023275F /* Build configuration list for PBXNativeTarget "SmokingDetection" */;
+			buildPhases = (
+				E59E78F12C038B5E0023275F /* Sources */,
+				E59E78F22C038B5E0023275F /* Frameworks */,
+				E59E78F32C038B5E0023275F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmokingDetection;
+			productName = SmokingDetection;
+			productReference = E59E78F52C038B5E0023275F /* SmokingDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E59E78ED2C038B5E0023275F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					E59E78F42C038B5E0023275F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = E59E78F02C038B5E0023275F /* Build configuration list for PBXProject "SmokingDetection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E59E78EC2C038B5E0023275F;
+			productRefGroup = E59E78F62C038B5E0023275F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E59E78F42C038B5E0023275F /* SmokingDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E59E78F32C038B5E0023275F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59E79022C038B5F0023275F /* Assets.xcassets in Resources */,
+				E59E79052C038B5F0023275F /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E59E78F12C038B5E0023275F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59E78FD2C038B5E0023275F /* AbstractCameraViewController.swift in Sources */,
+				E59E79192C03AF2C0023275F /* SmokePeopleModel.mlmodel in Sources */,
+				E59E78F92C038B5E0023275F /* AppDelegate.swift in Sources */,
+				E59E78FB2C038B5E0023275F /* SceneDelegate.swift in Sources */,
+				E59E79152C03AAD60023275F /* Logger.swift in Sources */,
+				E59E79172C03ADAD0023275F /* VisionObjectRecognitionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E59E79032C038B5F0023275F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E59E79042C038B5F0023275F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E59E79072C038B5F0023275F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E59E79082C038B5F0023275F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E59E790A2C038B5F0023275F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SKCX3NJ774;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmokingDetection/Resources/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Мне нужна твоя камера";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.migthyK1ngRichard.SmokingDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E59E790B2C038B5F0023275F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SKCX3NJ774;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmokingDetection/Resources/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Мне нужна твоя камера";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.migthyK1ngRichard.SmokingDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E59E78F02C038B5E0023275F /* Build configuration list for PBXProject "SmokingDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59E79072C038B5F0023275F /* Debug */,
+				E59E79082C038B5F0023275F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E59E79092C038B5F0023275F /* Build configuration list for PBXNativeTarget "SmokingDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59E790A2C038B5F0023275F /* Debug */,
+				E59E790B2C038B5F0023275F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E59E78ED2C038B5E0023275F /* Project object */;
+}
